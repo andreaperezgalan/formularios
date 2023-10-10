@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    
+    <header>
+        <h1>
+            Ejemplo de formularios
+        </h1>
+    </header>
+
+    <main>
+        <!-- Lo que nos aparece en rojo son atributos. -->
+        <!-- En los atributos da igual el orden -->
+        <!-- Esta es la etiqueta de formularios. El atributo "action" nos indica la url del servidor que va a tratar los datos que nosotros enviamos-->
+        <!-- Como solo nos interesa la parte de cliente, no nos hace falta el atributo. -->
+        <form>
+            <!-- Forma en la que no se hace : -->
+            <!-- <p>Nombre: </p>
+            <input type="text"> -->
+            <!-- a nivel de accesibilidad esto No es accesible. Porque un párrafo y un input NO se asocian. -->
+
+            <!-- En lugar de usar una etiqueta de parrafo, uso un "label" que está mejor pero no está bien del todo, porque tampoco está asociada con el input -->
+            <!-- Asocio la etiqueta con el input usando un id en el input y un for en el label. De esta forma cuando pulse en nombre o apellidos, me va a ir al recuadro para escribir directamente.-->
+            <label for="nombre">Nombre: </label>
+            <input id="nombre" type="text">  
+            <label for="apellidos">Apellidos: </label>
+            <input id="apellidos" type="text">     
+            <label>
+                <!-- es una asociacion implícita porque va dentro-->
+                Email: 
+                <input type="text">
+            </label>       
+        </form>
+
+        <!-- siempre que queramos coger datos de un formulario, nos va a hacer falta un ID -->
+    </main>
+
+
+</body>
+</html>
